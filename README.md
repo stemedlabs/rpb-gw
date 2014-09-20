@@ -12,6 +12,10 @@ You need to have the following installed on your system:
 * Virtualbox (https://www.virtualbox.org)
 * Vagrant (http://www.vagrantup.com)
 
+For host routing to work properly, you'll need to set a static IP on the
+bridged ethernet interface on the 192.168.123.0/24 subnet through your OS.
+A good address to use would be 192.168.123.20.
+
 ## Usage
 
 To launch the gateway after installing dependencies you can run:
