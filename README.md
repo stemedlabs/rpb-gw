@@ -32,7 +32,8 @@ You can destroy the VM using:
 Once the VM is booted, you can turn on your RBP and connect. It will DHCP and 
 use the VM as its network gateway. If the laptop has external connectivity (via
 wireless) the RBP will be NAT'd through the VM to the Internet via the VM's
-eth0 device. You can connect to the RBP using the address 192.168.123.100.
+eth0 device. You can connect to the RBP using the address assigned from dnsmasq
+on 192.168.123.0/24.
 
 Note, once booted if you reboot your VM you will need to reprovision as some
 settings are not persisted. That can be done by simply running:
