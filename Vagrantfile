@@ -12,7 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.define :gw do |gw|
-    gw.vm.hostname = "neutrino-gw"
+    gw.vm.hostname = "gw"
     gw.vm.network "public_network", ip: "192.168.123.10"
 
     # Provisioning steps
